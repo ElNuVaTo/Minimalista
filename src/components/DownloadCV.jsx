@@ -13,7 +13,7 @@ const Link = styled.a`
 const DownloadCV = () => {
   return (
     <>
-      <Link target="_blank" href="../assets/pdf/Angelo_Amaro-20_02_2024.pdf">
+      <Link target="_blank" href="../assets/pdf/Angelo_Alcaino_02_03_2024.pdf">
         Descargar CV
       </Link>
     </>
