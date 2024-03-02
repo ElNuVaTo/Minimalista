@@ -1,0 +1,71 @@
+/* Fonts personalizados */
+@font-face {
+  font-family: "Ubuntu_Titulos";
+  src: url("/src/assets/fonts/Ubuntu-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins_Texto";
+  src: url("/src/assets/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --BackgroundColor: #fefffe;
+}
+
+body {
+  background-color: var(--BackgroundColor);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Ubuntu_Titulos";
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 1.8px;
+  word-spacing: 2.3px;
+  text-align: left;
+}
+h2 {
+  font-size: 25.2px;
+}
+h2 {
+  font-size: 24px;
+}
+
+b {
+  font-family: "Ubuntu_Titulos";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  word-spacing: 0px;
+  letter-spacing: 1.1px;
+  text-align: left;
+}
+
+p,a  {
+  font-family: "Poppins_Texto";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  word-spacing: 1.2px;
+  text-align: left;
+}
+Button {
+  font-family: "Poppins_Texto";
+  font-weight: 500;
+  padding: 5px 10px;
+  background-color: rgb(94, 146, 237);
+  color: white;
+  border: none;
+}
