@@ -28,10 +28,10 @@ const Contenedor = styled.div`
     margin-top: 10px;
     border-radius: 15px;
     padding: 5px 0;
-    background-color: #f1f2f6;
+    background-color: ${(props) => props.theme.colorSecondary};
+    color: ${(props) => props.theme.text};
     text-align: center;
     text-decoration: none;
-    color: #252525;
   }
 `;
 const Texto = styled.div`

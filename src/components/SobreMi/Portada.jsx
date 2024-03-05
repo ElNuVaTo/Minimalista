@@ -12,6 +12,12 @@ const Main = styled.div`
   p {
     color: #b0b9be;
   }
+
+  @media (min-width: 500px) {
+    flex-direction: row;
+    justify-content: left;
+    gap: 15px;
+  }
 `;
 const Imagen = styled.div`
   border-radius: 50%;
@@ -25,6 +31,13 @@ const Imagen = styled.div`
     transform: rotate(-25deg);
   }
 `;
+const Nombres = styled.div`
+ text-align: center;
+
+ @media (min-width: 500px) {
+   text-align: left;
+  }
+`;
 
 const Portada = () => {
   return (
@@ -33,8 +46,10 @@ const Portada = () => {
         <Imagen>
           <img src={Foto} alt="Selfie de una persona" />
         </Imagen>
-        <b>Angelo Alcaino </b>
-        <p>Desarrollador Frontend</p>
+        <Nombres>
+          <b>Angelo Alcaino </b>
+          <p>Desarrollador Frontend</p>
+        </Nombres>
       </Main>
     </>
   );

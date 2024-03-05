@@ -5,21 +5,20 @@ import Box from "./Box";
 const Draggeable = styled(motion.div)`
   overflow-x: auto;
   display: flex;
-  gap: 30px;
+  gap: 45px;
   scroll-snap-type: x mandatory;
 
-
- /* Non-Standard, But More Styling-Capable Properties */
- &::-webkit-scrollbar {
+  /* Non-Standard, But More Styling-Capable Properties */
+  &::-webkit-scrollbar {
     width: 8px;
-    height: 8px; 
+    height: 8px;
   }
   &::-webkit-scrollbar-thumb {
-    background: gray;
+    background-color: ${(props) => props.theme.scrollBarra};
     border-radius: 8px;
   }
   &::-webkit-scrollbar-track {
-    background:  #ddd;
+    background-color: ${(props) => props.theme.scrollBack};
     border-radius: 8px;
   }
 
@@ -28,8 +27,6 @@ const Draggeable = styled(motion.div)`
     scrollbar-color: gray #ddd;
     scrollbar-width: thin;
   }
-
-
 `;
 
 const Dragg = () => {

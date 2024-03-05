@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Main = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 8px;
 `;
 
 const Contenedor = styled.div`
@@ -12,10 +12,12 @@ const Contenedor = styled.div`
  gap: 5px;
 `;
 const Tecno = styled.p`
- background-color: #f1f2f6;
+ background-color: ${(props) => props.theme.colorSecondary};
  width: max-content;
  padding: 4px 10px;
  border-radius: 5px;
+
+ 
 `;
 const Tecnologias = () => {
   return (

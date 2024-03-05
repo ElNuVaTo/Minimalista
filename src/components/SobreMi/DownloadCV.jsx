@@ -8,6 +8,10 @@ const Link = styled.a`
   border-radius: 5px;
   padding: 5px;
   text-align: center;
+
+  @media (min-width: 500px) {
+    display: none;
+  }
 `;
 
 const DownloadCV = () => {

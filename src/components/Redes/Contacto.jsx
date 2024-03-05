@@ -8,7 +8,7 @@ import Mobile from "@/assets/icons/device-mobile.svg";
 const Main = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 8px;
 `;
 const Contenedor = styled.div`
   display: flex;
@@ -25,23 +25,22 @@ const Links = styled.div`
     display: flex;
     flex-direction: column;
   }
- p {
-  font-size: 14px;
- 
- }
- a{
-  color: black;
-  font-size: 14px;
- }
+  p {
+    font-size: 14px;
+  }
+  a {
+    color: ${(props) => props.theme.text};
+    font-size: 14px;
+  }
   .SubTitulo {
     font-size: 12.5px;
-    color: #b0b9be;
+    color: ${(props) => props.theme.textDesc};
   }
 `;
 const Imagen = styled.div`
   padding: 5px;
   border-radius: 5px;
-  background-color: #ddd;
+  background-color: ${(props) => props.theme.colorSecondary};
   img {
     width: 45px;
     height: 45px;

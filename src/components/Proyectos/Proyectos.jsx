@@ -5,7 +5,7 @@ import Dragg from "./Dragg";
 const Main = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 8px;
 `;
 
 const Proyectos = () => {

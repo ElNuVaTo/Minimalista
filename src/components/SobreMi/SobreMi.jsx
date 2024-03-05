@@ -4,7 +4,7 @@ import DownloadCV from "./DownloadCV";
 const Main = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 8px;
 `;
 
 const SobreMi = () => {

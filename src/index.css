@@ -17,14 +17,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --BackgroundColor: #fefffe;
-}
-
-body {
-  background-color: var(--BackgroundColor);
-}
-
 h1,
 h2,
 h3 {
@@ -53,7 +45,8 @@ b {
   text-align: left;
 }
 
-p,a  {
+p,
+a {
   font-family: "Poppins_Texto";
   font-size: 15px;
   font-weight: 400;
